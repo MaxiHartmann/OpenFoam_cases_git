@@ -1,0 +1,4 @@
+#!/bin/sh
+postProcess -func sample -noZero
+gnuplot myScripts/resPlot.gnu  				# resdiuals Ux,Uy,k,omega
+python3 myScripts/Auswertung_1.py 	# Ux over wall-distance y
