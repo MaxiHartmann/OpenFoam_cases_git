@@ -45,5 +45,31 @@ timePrecision   8;
 
 runTimeModifiable true;
 
+functions
+{
+    #includeFunc wallShearStress
+    
+    yLine
+    {
+    type            sets;
+    libs            ("libsampling.so");
+    interpolationScheme cellPoint;
+    setFormat       raw;
+    writeControl    timeStep;
+    writeInterval   1000;
+	sets
+	(
+    	data
+    	{
+    	    type    midPointAndFace;
+    	    axis    y;
+    	    start   ( 0.97 0.0 0.0 );
+    	    end     ( 0.97 0.015 0.0 );
+    	    // nPoints 10001;
+    	}
+	);
+	fields          (U p wallShearStress);
+    }
+}
 
 // ************************************************************************* //

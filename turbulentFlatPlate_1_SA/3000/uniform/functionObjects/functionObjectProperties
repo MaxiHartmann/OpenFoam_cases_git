@@ -15,6 +15,21 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+yLine
+{
+    p
+    {
+        file            "<case>/postProcessing/yLine/3000/data_p.xy";
+    }
+    U
+    {
+        file            "<case>/postProcessing/yLine/3000/data_U_wallShearStress.xy";
+    }
+    wallShearStress
+    {
+        file            "<case>/postProcessing/yLine/3000/data_U_wallShearStress.xy";
+    }
+}
 
 
 // ************************************************************************* //

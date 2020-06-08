@@ -8,10 +8,10 @@
 Build  : _f3950763fe-20191219 OPENFOAM=1912
 Arch   : "LSB;label=32;scalar=64"
 Exec   : blockMesh
-Date   : Jun 07 2020
-Time   : 11:20:13
+Date   : Jun 08 2020
+Time   : 12:09:01
 Host   : mx
-PID    : 8453
+PID    : 20207
 I/O    : uncollated
 Case   : /home/max/OpenFOAM/max-v1912/run/turbulentFlatPlate_1_SA
 nProcs : 1
@@ -41,6 +41,7 @@ Check topology
 
 Creating block offsets
 Creating merge list...
+Deleting polyMesh directory "constant/polyMesh"
 
 Creating polyMesh from blockMesh
 Creating patches
@@ -48,12 +49,12 @@ Creating cells
 Creating points with scale 0.33333333
     Block 0 cell size :
         i : 0.0093561744 .. 0.0011972304
-        j : 9.0234339e-06 .. 0.019851555
+        j : 5.5567581e-07 .. 0.027783791
         k : 0.1 .. 0.1
 
     Block 1 cell size :
         i : 0.0009714167 .. 0.011235342
-        j : 9.0234339e-06 .. 0.019851555
+        j : 5.5567581e-07 .. 0.027783791
         k : 0.1 .. 0.1
 
 

@@ -1,4 +1,4 @@
-gnuplot myScripts/resPlot.gnu
+gnuplot resPlot.gnu
 simpleFoam -postProcess -func wallShearStress
 postProcess -func writeCellCentres 
 touch foam.foam
